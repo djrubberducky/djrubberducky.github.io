@@ -16,8 +16,10 @@ div {
 	box-sizing: border-box;
 }
  header {
- 	background: url(img/background1.jpg) no-repeat center top / cover;
+ 	background: url(../img/background1.jpg) no-repeat center top / cover;
  	height: 100vh;
+ 	padding-top: 40px;
+ 	box-sizing: border-box;
  }
 .container {
   width: 930px;
@@ -26,13 +28,13 @@ div {
 
 .logo {
   width: 200px;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   float: left;
 }
 
 nav {
 	float: right;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 }
 .menu {
 	padding: 0px;
@@ -58,13 +60,16 @@ nav {
      transition: 0.5s all;
 }
 
+.titles {
+	margin-top: 180px;
+}
+
 .titles-first {
 	font-family: Arial;
 	font-size: 40px;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 180px;
 }
 
 h1 {
@@ -98,9 +103,10 @@ h1 {
 	color: white;
 	transition: 0.5s all;
 }
+
+
 .title {
     padding-top: 115px;
-
 }
 
 .title h2 {
@@ -166,9 +172,60 @@ h1 {
 .services-item h3:hover {
 	color: orange;
 }
+
 .img-sizing {
 	width: 100px;
 }
+
+.hat-group {
+	display: inline;
+	width: 100px;
+	position: relative;
+}
+
+.hat-group .hat {
+	position: absolute;
+	width: 60px;
+	opacity: 0;
+	transform: rotateZ(120deg) scale(0);
+	left: 25px;
+	top: -100px;
+	transition-duration: .4s;
+}
+
+.hat-group:hover .hat {
+	transform: rotateZ(50deg) scale(1);
+	left: 18px;
+	top: -112px;	
+	opacity: 1;
+}
+
+.itunes {
+	transform: rotateZ(0deg);
+	transition-duration: .4s;
+}
+.itunes:hover {
+	transform: rotateZ(30deg);
+}
+
+.itunes-reverse:hover {
+	transform: rotateZ(-30deg);
+}
+.d45:hover {
+	transform: rotateZ(45deg);
+}
+.d90:hover {
+	transform: rotateZ(90deg);
+}
+
+
+/*.hover-duck {
+	transform: rotateZ(0deg);
+	transition-duration: .4s;
+}
+.hover-duck:hover {
+	transform: rotateZ(20deg);
+}*/
 
 #services {
 	padding-bottom: 390px;
