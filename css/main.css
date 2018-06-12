@@ -9,7 +9,7 @@
 	content: '';
 	display: table;
 	width: 100%;
-    clear: both;
+	clear: both;
 }
 
 div {
@@ -28,13 +28,11 @@ div {
 
 .logo {
   width: 200px;
-  /*margin-top: 40px;*/
   float: left;
 }
 
 nav {
 	float: right;
-	/*margin-top: 50px;*/
 }
 .menu {
 	padding: 0px;
@@ -53,15 +51,22 @@ nav {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
+	transition: 0.5s all;
 }
 
 .menu a:hover {
-     color: #ffe100;
-     transition: 0.5s all;
+	color: #ffe100;
 }
 
 .titles {
-	margin-top: 180px;
+	/*margin-top: 180px;*/
+	height: 246px;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
 
 .titles-first {
@@ -89,13 +94,13 @@ h1 {
 	width: 240px;
 	padding: 20px 0;
 	margin: 0 auto;
-    text-decoration: none;
-    text-align: center;
-    font-family: Arial;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 60px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 60px;
 }
 
 .button:hover {
@@ -106,7 +111,7 @@ h1 {
 
 
 .title {
-    padding-top: 115px;
+	padding-top: 115px;
 }
 
 .title h2 {
@@ -234,8 +239,8 @@ h1 {
 .works {
 	float: left;
 	text-align: center;
-    padding: 40px;
-    position: relative;
+	padding: 40px;
+	position: relative;
 }
 
 .works img:last-child {
